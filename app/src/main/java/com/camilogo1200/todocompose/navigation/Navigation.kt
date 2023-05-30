@@ -6,15 +6,14 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import com.camilogo1200.todocompose.navigation.destinations.listComposable
 import com.camilogo1200.todocompose.navigation.destinations.taskComposable
-import com.camilogo1200.todocompose.util.Constants.LIST_SCREEN
 
 @Composable
-fun setupNavigation(navController: NavHostController) {
+fun SetupNavigation(navController: NavHostController) {
     val screen = remember(navController) {
         Screens(navController)
     }
 
-    NavHost(navController, startDestination = LIST_SCREEN) {
+    NavHost(navController, startDestination = Route.TaskList.route) {
         listComposable(
             navigateToTaskScreen = screen.task
         )

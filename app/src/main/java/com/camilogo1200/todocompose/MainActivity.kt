@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.camilogo1200.todocompose.navigation.setupNavigation
+import com.camilogo1200.todocompose.navigation.SetupNavigation
 import com.camilogo1200.todocompose.ui.theme.ToDoComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
